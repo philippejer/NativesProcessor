@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!-- Configuration of the Ant build system to generate a Jar file --> 
+<project name="TestProcessor" default="CreateJar">
+  <target name="CreateJar" description="Create Jar file">
+        <!-- <delete file="NativesProcessor.jar"/> -->
+        <jar jarfile="NativesProcessor.jar">
+            <fileset dir="bin" />
+            <fileset dir="src" />
+            <fileset dir="." includes="META-INF/**"/>
+        </jar>
+  </target>
+</project>
