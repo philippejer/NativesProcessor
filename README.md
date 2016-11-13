@@ -12,6 +12,3 @@ In the case of arrays, if the parameter name ends with "In", the modifications t
 
 Generally, these basic translations are enough to build clunky-but-efficient Java wrappers using a long to store the pointer to the native object
 (in my experience, complex bi-directional native wrappers based on JVM upcalls are generally error-prone and less efficient).
-
-Example:
-
